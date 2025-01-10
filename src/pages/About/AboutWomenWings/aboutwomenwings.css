@@ -9,7 +9,7 @@ html, body {
 }
 
 /* Section Styles */
-.about-women-section {
+.about-women-wings {
     position: relative;
     top: 0;
     left: 0;
@@ -22,14 +22,11 @@ html, body {
 
 /* Section Container */
 .about-women-wings .container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: auto;
     height: 1400px;
     background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
-    padding: 150px 20px;
-    z-index: 10;
 }
 
 /* Header Section */
@@ -57,13 +54,13 @@ html, body {
 }
 
 /* Content Section */
-/* .about-women-wings .content {
-    display: flex;
+.about-women-wings .content {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     animation: fadeInUp 1.5s ease-in-out;
     width: auto;
-} */
+}
 
 /* Card Styles */
 .about-women-wings .card {

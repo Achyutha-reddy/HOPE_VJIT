@@ -22,15 +22,11 @@ html, body {
 
 /* Section Container */
 .about-hope .container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
+    padding-top: 120px;
+    max-width: 1200px;
+    margin:auto;
+    height: 1400px;
     background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
-    padding: 150px 20px;
-    z-index: 10;
-    overflow: hidden;
 }
 
 /* Header Section */

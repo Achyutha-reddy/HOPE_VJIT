@@ -1,8 +1,12 @@
 /* Container for the entire calendar section */
 .calendar-container {
-  padding: 20px;
+  padding-top: 120px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin:auto;
+  height: 1400px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 /* Event List Styling */
