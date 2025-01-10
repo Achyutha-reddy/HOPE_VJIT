@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} NGO Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} HOPE-Helphing Others and Prevading Others. All rights reserved.</p>
       </div>
     </footer>
   );
