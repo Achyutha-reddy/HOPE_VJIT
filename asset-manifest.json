@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/HOPE_VJIT/static/css/main.8b42847e.css",
+    "main.css": "/HOPE_VJIT/static/css/main.d2d0e463.css",
     "main.js": "/HOPE_VJIT/static/js/main.8a320c71.js",
     "static/media/hopegroup.jpg": "/HOPE_VJIT/static/media/hopegroup.d9c2f20b24e8e872e3d0.jpg",
     "static/media/heroimage.jpg": "/HOPE_VJIT/static/media/heroimage.21173cf1fe5d4fb0a69f.jpg",
     "static/media/virat.jpg": "/HOPE_VJIT/static/media/virat.d3ccd6763831b1ada332.jpg",
     "static/media/HopeLogo.png": "/HOPE_VJIT/static/media/HopeLogo.b6e04b5a0d95f73d0b1c.png",
     "index.html": "/HOPE_VJIT/index.html",
-    "main.8b42847e.css.map": "/HOPE_VJIT/static/css/main.8b42847e.css.map",
+    "main.d2d0e463.css.map": "/HOPE_VJIT/static/css/main.d2d0e463.css.map",
     "main.8a320c71.js.map": "/HOPE_VJIT/static/js/main.8a320c71.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b42847e.css",
+    "static/css/main.d2d0e463.css",
     "static/js/main.8a320c71.js"
   ]
 }
