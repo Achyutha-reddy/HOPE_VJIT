@@ -32,10 +32,9 @@ function App() {
     <Router>
       <Header/>
       <Navbar/>
-      <Home/>
       <Routes>
         {/* navbar */}
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
 
             {/* teams */}
             <Route path="/teams/hope" element={<Hope />}/>
