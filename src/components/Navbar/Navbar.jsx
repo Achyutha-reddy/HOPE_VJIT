@@ -44,13 +44,13 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          {/* <li className="navbar-item">
+          <li className="navbar-item">
             <Link to="/recruitment" className="navbar-links">Recruitment</Link>
-          </li> */}
+          </li>
           <li className="navbar-item">
             <Link to="/contact" className="navbar-links">Contact</Link>
           </li>
-          <li className="navbar-item" onClick={toggleDropdown}>
+          {/* <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Donate</span>
             {isDropdownOpen && (
               <ul className="dropdown">
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <li><Link to="/donate/stationary" className="dropdown-item">want to donate Stationary..?</Link></li>
               </ul>
             )}
-          </li>
+          </li> */}
           <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Gallery</span>
             {isDropdownOpen && (

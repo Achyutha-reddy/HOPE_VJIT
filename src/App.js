@@ -48,12 +48,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
 
         {/* recruitment */}
-        {/* <Route path="/recruitment" element={<Recruitment />} /> */}
+        <Route path="/recruitment" element={<Recruitment />} />
 
         {/* Donate Routes */}
-        <Route path="/donate/books" element={<Books />} />
+        {/* <Route path="/donate/books" element={<Books />} />
         <Route path="/donate/clothes" element={<Clothes />} />
-        <Route path="/donate/stationary" element={<Stationary />} />
+        <Route path="/donate/stationary" element={<Stationary />} /> */}
 
         {/* Gallery Routes */}
         <Route path="/gallery/laal" element={<Laal />} />

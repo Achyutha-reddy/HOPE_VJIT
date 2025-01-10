@@ -1,118 +1,48 @@
-/* JoiningClub.css */
-.container {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .container h2 {
+/* Additional CSS for new sections */
+
+.logo-container {
     text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   
-  .container p {
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .google-form-link-container {
+    margin: 40px auto;
     text-align: center;
-    color: #666;
-    margin-bottom: 20px;
-    font-size: 14px;
+    max-width: 900px;
   }
   
-  .form-group {
-    margin-bottom: 20px;
-    animation: fadeIn 0.5s ease;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  .google-form-title {
+    font-size: 1.8em;
     font-weight: bold;
-    color: #555;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .google-form-description {
+    font-size: 1.2em;
+    color: gray;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .google-form-link {
+    font-size: 1.2em;
+    color: #1f4e79;
+    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s ease;
   }
   
-  .form-group label:hover {
-    color: #007BFF;
+  .google-form-link:hover {
+    color: #0f3b5a; /* Darker blue on hover */
   }
-  
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  span{
+    font-size: xx-large;
+    color: linear-gradient(135deg, #a6f1a6, #2c3e50);;
   }
-  
-  .form-group input:focus,
-  .form-group select:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-    outline: none;
-  }
-  
-  .button-container {
-    text-align: center;
-  }
-  
-  .submit-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .submit-button:active {
-    background-color: #00408a;
-    transform: scale(0.95);
-  }
-  
-  /* Animation for the form when it appears */
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .container {
-    animation: slideIn 0.5s ease;
-  }
-  

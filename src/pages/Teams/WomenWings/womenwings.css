@@ -1,7 +1,7 @@
 /* Overall Container for Team */
 .team-container {
     padding: 50px;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+    background: linear-gradient(135deg, #a6f1a6, #2c3e50);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -113,7 +113,7 @@
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      transform: translateY(-50);
       opacity: 1;
     }
   }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";  // Importing icons
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social media icons
 import "./contact.css";
 
 const Contact = () => {
@@ -24,6 +24,7 @@ const Contact = () => {
   };
 
   return (
+    <div className="main">
     <div className="contact-container">
       <h2>Contact HOPE</h2>
       <p>Have questions or suggestions?</p>
@@ -73,24 +74,29 @@ const Contact = () => {
             Send Message
           </button>
         </div>
+        <div className="footer-socials">
+                <div className="social-icons">
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook size={24} />
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <FaTwitter size={24} />
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram size={24} />
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={24} />
+                  </a>
+                </div>
+              </div>
       </form>
+      </div>
 
       {/* Social Icons */}
-      <div className="social-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebookF />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedinIn />
-        </a>
+      
       </div>
-    </div>
+    
   );
 };
 
