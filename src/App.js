@@ -30,11 +30,13 @@ import ProjectRythuBandhuSamithi from "./pages/Projects/ProjectRythuBandhuSamith
 function App() {
   return (
     <Router>
+      
       <Header/>
       <Navbar/>
+      <Home />
       <Routes>
         {/* navbar */}
-            <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
 
             {/* teams */}
             <Route path="/teams/hope" element={<Hope />}/>
