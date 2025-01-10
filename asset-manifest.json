@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/HOPE_VJIT/static/css/main.94f5a4d8.css",
-    "main.js": "/HOPE_VJIT/static/js/main.b6ad3f61.js",
+    "main.css": "/HOPE_VJIT/static/css/main.d4917ff8.css",
+    "main.js": "/HOPE_VJIT/static/js/main.19aed7c0.js",
+    "static/media/rythubandhusamithi9.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi9.39784c0aeb449445be99.jpg",
     "static/media/hopegroup.jpg": "/HOPE_VJIT/static/media/hopegroup.d9c2f20b24e8e872e3d0.jpg",
+    "static/media/rythubandhusamithi5.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi5.d9c2f20b24e8e872e3d0.jpg",
+    "static/media/rythubandhusamithi2.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi2.217433871ea6578974d2.jpg",
+    "static/media/rythubandhusamithi8.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi8.8ec4c4a3d3ea2ad7cad3.jpg",
     "static/media/heroimage.jpg": "/HOPE_VJIT/static/media/heroimage.21173cf1fe5d4fb0a69f.jpg",
+    "static/media/rythubandhusamithi6.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi6.ba73fdb7765cdcd99d95.jpg",
+    "static/media/rythubandhusamithi4.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi4.72b7081752216e6813e3.jpg",
+    "static/media/rythubandhusamithi7.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi7.7da1b726735e04ec0d46.jpg",
+    "static/media/rythubandhusamithi1.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi1.20e1431d8dc6772e365e.jpg",
+    "static/media/rythubandhusamithi10.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi10.7a5656d251c88a9214c2.jpg",
     "static/media/virat.jpg": "/HOPE_VJIT/static/media/virat.d3ccd6763831b1ada332.jpg",
+    "static/media/rythubandhusamithi3.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi3.0ca0f0139fe2b919cbe8.jpg",
     "static/media/HopeLogo.png": "/HOPE_VJIT/static/media/HopeLogo.b6e04b5a0d95f73d0b1c.png",
     "index.html": "/HOPE_VJIT/index.html",
-    "main.94f5a4d8.css.map": "/HOPE_VJIT/static/css/main.94f5a4d8.css.map",
-    "main.b6ad3f61.js.map": "/HOPE_VJIT/static/js/main.b6ad3f61.js.map"
+    "main.d4917ff8.css.map": "/HOPE_VJIT/static/css/main.d4917ff8.css.map",
+    "main.19aed7c0.js.map": "/HOPE_VJIT/static/js/main.19aed7c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.94f5a4d8.css",
-    "static/js/main.b6ad3f61.js"
+    "static/css/main.d4917ff8.css",
+    "static/js/main.19aed7c0.js"
   ]
 }
