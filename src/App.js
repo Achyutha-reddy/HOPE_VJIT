@@ -25,6 +25,7 @@ import ProjectLaal from "./pages/Projects/ProjectLaal/ProjectLaal";
 import ProjectShiksha from "./pages/Projects/ProjectShiksha/ProjectShiksha";
 import ProjectConnect2Earth from "./pages/Projects/ProjectConnect2Earth/ProjectConnect2Earth";
 import ProjectRythuBandhuSamithi from "./pages/Projects/ProjectRythuBandhuSamithi/ProjectRythuBandhuSamithi";
+import Recruitment from "./pages/Recruitment/Recruitment";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
 
         {/* Contact Route */}
         <Route path="/contact" element={<Contact />} />
+
+        {/* recruitment */}
+        {/* <Route path="/recruitment" element={<Recruitment />} /> */}
 
         {/* Donate Routes */}
         <Route path="/donate/books" element={<Books />} />
