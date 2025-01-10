@@ -9,13 +9,10 @@ body {
   
   /* Section Styling */
   .about-hope {
-    background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient for cool tone */
-    padding: 60px 0;
-    overflow: hidden;
-    /* margin: 20px; */
-    height: 2400px;
+    padding: 6rem 2rem;
+    background: linear-gradient(120deg, #E8F0FE, #F3EFFF);
     animation: fadeIn 1.5s ease-in-out;
-    color: #333; /* Dark text for better readability on light background */
+    height: 2400px;
   }
   
   /* Container */
@@ -24,7 +21,7 @@ body {
     top: 0;
     left: 0;
     width: auto;
-    height: 1400px;
+    /* height: 1400px; */
     background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
     padding: 150px 20px;
     z-index: 10;
