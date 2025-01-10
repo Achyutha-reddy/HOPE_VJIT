@@ -23,6 +23,9 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className={`navbar-menu ${isMobile ? 'active' : ''}`}>
+        <li className="navbar-item">
+            <Link to="/" className="navbar-links">Home</Link>
+          </li>
         <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Teams</span>
             {isDropdownOpen && (
