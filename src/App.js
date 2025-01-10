@@ -26,60 +26,53 @@ import ProjectShiksha from "./pages/Projects/ProjectShiksha/ProjectShiksha";
 import ProjectConnect2Earth from "./pages/Projects/ProjectConnect2Earth/ProjectConnect2Earth";
 import ProjectRythuBandhuSamithi from "./pages/Projects/ProjectRythuBandhuSamithi/ProjectRythuBandhuSamithi";
 
-
 function App() {
   return (
     <Router>
-      
-      <Header/>
-      <Navbar/>
-      {/* <Home /> */}
+      <Header />
+      <Navbar />
       <Routes>
-        {/* navbar */}
+        {/* Home Route */}
         <Route path="/" element={<Home />} />
 
-            {/* teams */}
-            <Route path="/teams/hope" element={<Hope />}/>
-            <Route path="/teams/womenwings" element={<WomenWings />}/>
+        {/* Teams Routes */}
+        <Route path="/teams/hope" element={<Hope />} />
+        <Route path="/teams/womenwings" element={<WomenWings />} />
 
-            {/* about */}
-            <Route path="/about/hope" element={<AboutHope />}/>
-            <Route path="/about/womenwings" element={<AboutWomenWings />}/>
+        {/* About Routes */}
+        <Route path="/about/hope" element={<AboutHope />} />
+        <Route path="/about/womenwings" element={<AboutWomenWings />} />
 
-            {/* contact */}
-            <Route path="/contact" element={<Contact />}/>
+        {/* Contact Route */}
+        <Route path="/contact" element={<Contact />} />
 
-            {/* donate */}
-            <Route path="/donate/books" element={<Books />}/>
-            <Route path="/donate/clothes" element={<Clothes />}/>
-            <Route path="/donate/stationary" element={<Stationary />}/>
+        {/* Donate Routes */}
+        <Route path="/donate/books" element={<Books />} />
+        <Route path="/donate/clothes" element={<Clothes />} />
+        <Route path="/donate/stationary" element={<Stationary />} />
 
-            {/* gallery */}
-            <Route path="/gallery/laal" element={<Laal />}/>
-            <Route path="/gallery/shiksha" element={<Shiksha />}/>
-            <Route path="/gallery/connect2earth" element={<Connect2Earth />}/>
-            <Route path="/gallery/rythubandhusamithi" element={<RythuBandhuSamithi />}/>
+        {/* Gallery Routes */}
+        <Route path="/gallery/laal" element={<Laal />} />
+        <Route path="/gallery/shiksha" element={<Shiksha />} />
+        <Route path="/gallery/connect2earth" element={<Connect2Earth />} />
+        <Route path="/gallery/rythubandhusamithi" element={<RythuBandhuSamithi />} />
 
-            {/* events */}
-            <Route path="/events/upcomming" element={<Upcomming />}/>
-            <Route path="/events/past" element={<Past />}/>
-            
+        {/* Events Routes */}
+        <Route path="/events/upcomming" element={<Upcomming />} />
+        <Route path="/events/past" element={<Past />} />
 
-            {/* vission & mission */}
-            <Route path="/vissionmission" element={<VissionMission />}/>
+        {/* Vision & Mission Route */}
+        <Route path="/vissionmission" element={<VissionMission />} />
 
-            {/* projects */}
-            <Route path="/projects/laal" element={<ProjectLaal/>}/>
-            <Route path="/projects/shiksha" element={<ProjectShiksha />}/>
-            <Route path="/projects/connect2earth" element={<ProjectConnect2Earth />}/>
-            <Route path="/projects/rythubandhusamithi" element={<ProjectRythuBandhuSamithi />}/>
-          </Routes>
-      <Footer/>
+        {/* Projects Routes */}
+        <Route path="/projects/laal" element={<ProjectLaal />} />
+        <Route path="/projects/shiksha" element={<ProjectShiksha />} />
+        <Route path="/projects/connect2earth" element={<ProjectConnect2Earth />} />
+        <Route path="/projects/rythubandhusamithi" element={<ProjectRythuBandhuSamithi />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }
 
 export default App;
-
-
-
