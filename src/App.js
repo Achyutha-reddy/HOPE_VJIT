@@ -33,10 +33,10 @@ function App() {
       
       <Header/>
       <Navbar/>
-      <Home />
+      {/* <Home /> */}
       <Routes>
         {/* navbar */}
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
 
             {/* teams */}
             <Route path="/teams/hope" element={<Hope />}/>
