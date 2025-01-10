@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .hero {
-  background-color: #2196F3; /* Blue */
+  background-color: #1E3A8A; /* Dark Blue */
   color: white;
   padding: 6rem 2rem;
   text-align: center;
@@ -24,18 +24,17 @@
 }
 
 .hero .btn-donate {
-  background-color: #34495e; /* Light Blue */
+  background-color: #2B6CB0; /* Lighter Blue */
   color: white;
   text-decoration: none;
   padding: 1.25rem 2.5rem;
   border-radius: 0.75rem;
   font-size: 1.25rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
 }
 
 .hero .btn-donate:hover {
-  background-color: #0288D1; /* Darker Blue */
+  background-color: #3182CE; /* Even Darker Blue */
   transform: scale(1.05);
   text-decoration: none;
 }
@@ -43,46 +42,98 @@
 /* About Section */
 .about {
   padding: 5rem 2rem;
-  background-color: #E1F5FE; /* Light Blue */
+  background-color: #E6FFFA; /* Light Teal */
   text-align: center;
-  text-decoration: none;
+  position: relative;
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .about h2 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  text-decoration: none;
+  color: #2D3748; /* Dark Gray */
 }
 
 .about p {
   font-size: 1.125rem;
   margin-bottom: 2.5rem;
-  text-decoration: none;
+  color: #4A5568; /* Medium Gray */
   line-height: 1.7;
 }
 
 .about .btn-learn-more {
-  background-color: #4CAF50; /* Green */
+  background-color: #38B2AC; /* Greenish Teal */
   color: white;
   padding: 1.25rem 2.5rem;
   border-radius: 0.75rem;
   text-decoration: none;
   font-size: 1.25rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
 }
 
 .about .btn-learn-more:hover {
-  background-color: #388E3C; /* Dark Green */
+  background-color: #2C7A7B; /* Darker Greenish Teal */
   transform: scale(1.05);
-  text-decoration: none;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about .btn-learn-more {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 6rem 2rem;
+  }
+
+  .about h2 {
+    font-size: 2.75rem;
+  }
+
+  .about p {
+    font-size: 1.25rem;
+  }
 }
 
 /* Featured Projects Section */
 .projects {
   padding: 5rem 2rem;
-  background-color: #F1F8FF; /* Very Light Blue */
+  background-color: #F7FAFC; /* Off-White */
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -95,7 +146,7 @@
 }
 
 .projects .project-card {
-  background-color: #B3E5FC; /* Light Blue */
+  background-color: #E2E8F0; /* Light Gray */
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -118,18 +169,18 @@
 }
 
 .projects .project-card a {
-  color: #03A9F4; /* Light Blue */
+  color: #4A90E2; /* Soft Blue */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .projects .project-card a:hover {
-  color: #0288D1; /* Darker Blue */
+  color: #357ABD; /* Darker Blue */
 }
 
 /* Call to Action Section */
 .call-to-action {
-  background-color: #00BCD4; /* Cyan */
+  background-color: #38B2AC; /* Cyan */
   color: white;
   padding: 6rem 2rem;
   text-align: center;
@@ -149,7 +200,7 @@
 }
 
 .call-to-action .btn-donate {
-  background-color: #0097A7; /* Dark Cyan */
+  background-color: #2C7A7B; /* Darker Cyan */
   color: white;
   padding: 1.25rem 2.5rem;
   border-radius: 0.75rem;
@@ -159,14 +210,14 @@
 }
 
 .call-to-action .btn-donate:hover {
-  background-color: #00796B; /* Teal */
+  background-color: #1A6B6D; /* Teal */
   transform: scale(1.05);
   text-decoration: none;
 }
 
 /* Footer Section */
 .footer {
-  background-color: #263238; /* Dark Slate Blue */
+  background-color: #2D3748; /* Dark Slate Blue */
   color: white;
   padding: 3rem 2rem;
   text-align: center;
@@ -225,5 +276,150 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #E2E8F0; /* Light background for better contrast */
+}
+
+.hero-content {
+  z-index: 10;
+  color: #263238;
+}
+
+.hero-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40%; /* Increased width for more prominent image */
+  height: 70%; /* Adjusted height */
+  object-fit: cover;
+  opacity: 0.5; /* Slight transparency for better text visibility */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hover Effect */
+.hero-image:hover {
+  transform: scale(1.1); /* Zoom effect */
+  opacity: 1; /* Slight increase in opacity on hover */
+}
+
+/* Animation for Hero Image when the page loads */
+@keyframes fadeInImage {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hero-image {
+  animation: fadeInImage 1s ease-out;
+}
+
+.hero-image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.hero h1, .hero p {
+  z-index: 10;
+}
+
+/* Featured Projects Section */
+.projects {
+  padding: 40px 20px;
+  background-color: #F7FAFC; /* Off-White */
+}
+
+.project-card {
+  position: relative; /* Ensure content is over the image */
+  background-color: #EDF2F7; /* Light Gray */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 70px; /* Decreased the height */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the container */
+  opacity: 0.4; /* Darker transparency */
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.content-overlay h3,
+.content-overlay p {
+  margin: 10px 0;
+}
+
+/* Hover effect for the image */
+.project-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Button styling */
+.btn-details {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-details:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

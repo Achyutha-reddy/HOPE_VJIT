@@ -1,14 +1,28 @@
 import React from 'react';
 import './home.css';  // Import the CSS file
+import hero from '../../assets/images/HopeLogo.png';  // Import the hero image
+import about from '../../assets/images/hopegroup.jpg'
+import heroimage from '../../assets/images/heroimage.jpg'
+// import shiksha from '../../assets/images/shiksha.jpg'
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section */}
       <section className="hero">
-        <h1>Make a Difference with Us</h1>
-        <p>Join our mission to create a positive change in the world. Together, we can transform lives.</p>
-        <a href="#donate" className="btn-donate">Donate Now</a>
+        <div className="hero-content">
+          <h1>Make a Difference with Us</h1>
+          <p>Join our mission to create a positive change in the world. Together, we can transform lives.</p>
+          <a href="#donate" className="btn-donate">Donate Now</a>
+        </div>
+        {/* Background image for the Hero Section */}
+        <img src={hero} alt="Hero Image" className="hero-image" />
+        {/* Background video for the Hero Section */}
+        {/* <video className="hero-video" autoplay loop muted>
+          <img src={heroimage} alt="Hero Image" />
+        </video> */}
+         <img src={heroimage} alt="Hero Image" className="hero-image1" />
+         {/* Background video for the Hero Section */}
       </section>
 
       {/* About Section */}
@@ -18,23 +32,28 @@ const Home = () => {
           <p>We are an NGO dedicated to improving the lives of underprivileged communities. We work on various projects ranging from education to healthcare, and environmental sustainability. Your support makes a big difference.</p>
           <a href="#projects" className="btn-learn-more">Learn More</a>
         </div>
+        {/* Add an image related to your mission */}
+        <img src={about} alt="About Us" className="about-image" />
       </section>
 
       {/* Featured Projects Section */}
       <section id="projects" className="projects">
-        <h2>Our Featured Projects</h2>
+        <h2>Project Shiksha</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="project-card">
+            <img src="" alt="Education for All" className="project-image" />
             <h3>Education for All</h3>
             <p>Our project provides education to children in remote areas, ensuring every child has access to quality learning.</p>
             <a href="#project-details">Learn More</a>
           </div>
           <div className="project-card">
+            <img src="/path/to/water-image.jpg" alt="Clean Water Initiative" className="project-image" />
             <h3>Clean Water Initiative</h3>
             <p>We work on projects to provide safe drinking water to communities facing water scarcity.</p>
             <a href="#project-details">Learn More</a>
           </div>
           <div className="project-card">
+            <img src="/path/to/health-image.jpg" alt="Health for All" className="project-image" />
             <h3>Health for All</h3>
             <p>Our healthcare initiatives aim to improve the health of underserved populations by providing free medical aid.</p>
             <a href="#project-details">Learn More</a>
