@@ -10,7 +10,7 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   animation: slideInLeft 1s ease-out;
@@ -422,4 +422,8 @@
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+span{
+  font-weight: bold;
+  color:  #2B6CB0;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // For routing
 import './home.css';  // Import the CSS file
 import hero from '../../assets/images/HopeLogo.png';  // Import the hero image
 import about from '../../assets/images/hopegroup.jpg'
@@ -11,9 +12,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Make a Difference with Us</h1>
-          <p>Join our mission to create a positive change in the world. Together, we can transform lives.</p>
-          <a href="#donate" className="btn-donate">Donate Now</a>
+          <h1>bringing HOPE where it’s needed most</h1>
+          <p>Join the HOPE to make world better Everyday.</p>
+          <Link to="/events/upcomming" className="btn-donate">UPCOMING EVENTS</Link>
         </div>
         {/* Background image for the Hero Section */}
         <img src={hero} alt="Hero Image" className="hero-image" />
@@ -29,7 +30,7 @@ const Home = () => {
       <section className="about">
         <div className="max-w-4xl mx-auto">
           <h2>About Us</h2>
-          <p>We are an NGO dedicated to improving the lives of underprivileged communities. We work on various projects ranging from education to healthcare, and environmental sustainability. Your support makes a big difference.</p>
+          <p>Helping Others and Pervading Empathy <span>SANDEEP</span> and <span>AAKANSHA</span> started HOPE on 20th July 2022 in Vidya Jyothi Institute of Technology, with a vision of serving humankind with a group of like-minded individuals.</p>
           <a href="#projects" className="btn-learn-more">Learn More</a>
         </div>
         {/* Add an image related to your mission */}

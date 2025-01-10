@@ -10,7 +10,7 @@ const Upcomming = () => {
 
   // Upcoming events in a dictionary format with dates as keys and events as values
   const upcomingEvents = {
-    "Thu Jan 15 2025": ["Meeting with Team", "Doctor's Appointment"],
+    "Fri Jan 10 2025": ["Meeting with Team", "Doctor's Appointment"],
     "Sat Jan 20 2025": ["Project Deadline"],
     "Mon Jan 25 2025": ["Family Gathering"],
     "Fri Jan 30 2025": ["Wedding Anniversary", "Work Deadline"],
@@ -64,7 +64,25 @@ const Upcomming = () => {
   return (
     <div className="calendar-container">
       {/* Calendar Section at the top */}
-
+      <div className="event-list-container">
+        <h2 className="event-list-title">Events for {selectedDateKey}</h2>
+        {selectedEvents.length > 0 ? (
+          <ul className="event-list">
+            {selectedEvents.map((event, index) => (
+              <li key={index} className="event-item">
+                <img
+                  src={hopeimage}
+                  alt="Event Logo"
+                  className="event-logo-img"
+                />
+                {event}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No events for this day.</p>
+        )}
+      </div>
       {/* All upcoming events list (below calendar) */}
       <div className="all-events-container">
         <div className="events-list">
@@ -89,25 +107,7 @@ const Upcomming = () => {
       </div>
 
       {/* Render the upcoming events list for the selected date */}
-      <div className="event-list-container">
-        <h2 className="event-list-title">Events for {selectedDateKey}</h2>
-        {selectedEvents.length > 0 ? (
-          <ul className="event-list">
-            {selectedEvents.map((event, index) => (
-              <li key={index} className="event-item">
-                <img
-                  src={hopeimage}
-                  alt="Event Logo"
-                  className="event-logo-img"
-                />
-                {event}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>No events for this day.</p>
-        )}
-      </div>
+      
     </div>
   );
 };
