@@ -1,0 +1,121 @@
+/* Styling for the Past Events container */
+.past-events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f3f4f8, #e6e9f0); /* Light blue-grey gradient */
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .past-events-container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  /* Title for the Past Events section */
+  .past-events-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #2d3436; /* Dark grey */
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .past-events-title:hover {
+    color: #f39c12; /* Warm yellow on hover */
+  }
+  
+  /* Styling for the event days */
+  .past-event-day {
+    margin-bottom: 35px;
+    transition: transform 0.3s ease-in-out, margin 0.3s ease;
+  }
+  
+  .past-event-day:hover {
+    transform: translateX(12px); /* Slide effect */
+    margin-left: 10px;
+  }
+  
+  /* Date styling */
+  .past-event-date {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e; /* Grey-blue */
+    margin-bottom: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .past-event-date:hover {
+    color: #e67e22; /* Orange on hover */
+  }
+  
+  /* Event list styling */
+  .past-event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling for each past event item */
+  .past-event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #2c3e50; /* Dark blue-grey */
+    padding: 14px;
+    background-color: #ffffff; /* White background for items */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  }
+  
+  .past-event-item:hover {
+    background-color: #f1c40f; /* Bright yellow on hover */
+    transform: translateX(8px); /* Slight slide effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling for event logos */
+  .event-logo-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .event-logo-img:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .past-events-container {
+      padding: 25px;
+    }
+  
+    .past-event-date {
+      font-size: 1.5rem;
+    }
+  
+    .past-event-item {
+      padding: 10px;
+    }
+  
+    .event-logo-img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

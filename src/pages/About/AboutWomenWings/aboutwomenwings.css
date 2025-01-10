@@ -1,0 +1,137 @@
+/* Base Styles */
+:root {
+    --primary-color: #6C63FF; /* Indigo */
+    --secondary-color: #FFC947; /* Yellow */
+    --text-color: #2C2C54; /* Dark Blue */
+    --background-color: #F8F9FA; /* Light Gray */
+    --card-bg-color: #FFFFFF; /* White */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Section Styles */
+.about-women-wings {
+    padding: 6rem 2rem;
+    background: linear-gradient(120deg, #E8F0FE, #F3EFFF);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-women-wings .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.about-women-wings .header {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.about-women-wings .header h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-women-wings .header p {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Content Section */
+.about-women-wings .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card Styles */
+.about-women-wings .card {
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: zoomIn 1s ease-out;
+    text-align: center;
+}
+
+.about-women-wings .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--hover-shadow-color);
+    background-color: #EFF2FF; /* Light Indigo Highlight */
+}
+
+.about-women-wings .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-women-wings .card p {
+    font-size: 1.125rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.about-women-wings .card .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-women-wings .card .btn:hover {
+    background-color: #FFA726; /* Darker Yellow */
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

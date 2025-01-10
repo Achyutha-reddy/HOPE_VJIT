@@ -1,0 +1,229 @@
+/* Home.css */
+
+/* Hero Section */
+.hero {
+  background-color: #2196F3; /* Blue */
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: slideInRight 1s ease-out;
+  text-decoration: none;
+}
+
+.hero .btn-donate {
+  background-color: #34495e; /* Light Blue */
+  color: white;
+  text-decoration: none;
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.hero .btn-donate:hover {
+  background-color: #0288D1; /* Darker Blue */
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* About Section */
+.about {
+  padding: 5rem 2rem;
+  background-color: #E1F5FE; /* Light Blue */
+  text-align: center;
+  text-decoration: none;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+}
+
+.about p {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+.about .btn-learn-more {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about .btn-learn-more:hover {
+  background-color: #388E3C; /* Dark Green */
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Featured Projects Section */
+.projects {
+  padding: 5rem 2rem;
+  background-color: #F1F8FF; /* Very Light Blue */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.projects h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: slideInUp 1s ease-out;
+}
+
+.projects .project-card {
+  background-color: #B3E5FC; /* Light Blue */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.projects .project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.projects .project-card p {
+  margin-bottom: 1.25rem;
+}
+
+.projects .project-card a {
+  color: #03A9F4; /* Light Blue */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.projects .project-card a:hover {
+  color: #0288D1; /* Darker Blue */
+}
+
+/* Call to Action Section */
+.call-to-action {
+  background-color: #00BCD4; /* Cyan */
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.call-to-action h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.call-to-action p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.call-to-action .btn-donate {
+  background-color: #0097A7; /* Dark Cyan */
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action .btn-donate:hover {
+  background-color: #00796B; /* Teal */
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #263238; /* Dark Slate Blue */
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer a {
+  color: #81D4FA; /* Light Blue */
+  font-size: 1.5rem;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0288D1; /* Darker Blue */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

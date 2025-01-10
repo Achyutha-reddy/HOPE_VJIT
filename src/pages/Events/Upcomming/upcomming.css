@@ -1,0 +1,394 @@
+/* upcomming.css */
+
+/* Main container for the calendar and event list */
+/* Main container for the calendar and event list */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 100vh; /* Take up the full viewport height */
+    max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+    padding: 40px;
+    background: linear-gradient(135deg, #f1f2f6, #dfe6e9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Remove margin and rely on flex centering */
+    transition: transform 0.3s ease;
+    text-align: center; /* Ensure the text is centered */
+    overflow: auto; /* Allow scrolling if content overflows */
+    padding-bottom: 100px; /* Optional padding to make sure content doesn't hide under the scrollbar */
+}
+
+.calendar-container:hover {
+    transform: scale(1.02);
+}
+
+/* Other styles remain the same */
+
+  
+  /* Title for the calendar section */
+  .calendar-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .calendar-title:hover {
+    color: #3498db;
+  }
+  
+  /* Calendar Wrapper */
+  .calendar-wrapper {
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Event day list */
+  .all-events-container {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .events-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .event-day {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-day:hover {
+    transform: translateX(10px);
+  }
+  
+  .event-date {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .event-date:hover {
+    color: #3498db;
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #34495e;
+    padding: 12px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .event-item:hover {
+    background-color: #aed6f1;
+    transform: translateX(5px);
+  }
+  
+  /* Event logo image styling */
+  .event-logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .event-logo-img:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Highlighted date in the calendar */
+  .highlighted-date {
+    background-color: #d4eaff;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Tooltip content for event dates */
+  .event-tooltip {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  /* Tooltip visibility when hovering over tile */
+  .tile-logo:hover .event-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Calendar tile hover effect */
+  .react-calendar__tile {
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #aed6f1;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Active tile styling */
+  .react-calendar__tile--active {
+    background-color: #007bb5;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Styling for days with events */
+  .react-calendar__tile--hasEvent {
+    background-color: #d4eaff;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #3498db;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .react-calendar__tile--hasEvent:hover {
+    background-color: #a2c8e7;
+    box-shadow: inset 0 0 0 3px #2980b9;
+  }
+  
+  /* Styling for the day cells in calendar */
+  .react-calendar__month-view__days__day {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: #e74c3c;
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #bdc3c7;
+  }
+  
+  /* Weekday header styling */
+  .react-calendar__month-view__weekdays__weekday {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Hover effects for events */
+  .react-calendar__tile--hasEvent .event-tooltip {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Upcoming events section for selected date */
+  .event-list-container {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .event-list-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Tooltip for upcoming events */
+  .event-tooltip-item {
+    padding: 5px 0;
+    font-weight: 500;
+    color: #3498db;
+  }
+  
+  .event-list-container p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+  }
+  
+
+  
+  /* upcomming.css */
+
+/* Main container for the calendar and event list */
+/* Main container for the calendar and event list */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 100vh; /* Take up the full viewport height */
+    padding: 40px;
+    background: linear-gradient(135deg, #f1f2f6, #dfe6e9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Remove margin and rely on flex centering */
+    transition: transform 0.3s ease;
+    text-align: center; /* Ensure the text is centered */
+}
+
+.calendar-container:hover {
+    transform: scale(1.02);
+}
+
+/* Other styles remain the same */
+
+
+/* Title for the calendar section */
+.calendar-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.calendar-title:hover {
+    color: #3498db;
+}
+
+/* Calendar Wrapper */
+.calendar-wrapper {
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set maximum width to center it on larger screens */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.calendar-wrapper:hover {
+    transform: translateY(-5px); /* Subtle upward movement */
+}
+
+/* Styling for the calendar days */
+.react-calendar__month-view__days__day {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.react-calendar__tile {
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Calendar tile hover effect */
+.react-calendar__tile:hover {
+    background-color: #aed6f1;
+    cursor: pointer;
+    transform: scale(1.05); /* Scale on hover */
+}
+
+/* Active tile styling */
+.react-calendar__tile--active {
+    background-color: #007bb5;
+    color: white;
+    transform: scale(1.1); /* Slightly enlarge active tile */
+}
+
+/* Styling for days with events */
+.react-calendar__tile--hasEvent {
+    background-color: #d4eaff;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #3498db;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.react-calendar__tile--hasEvent:hover {
+    background-color: #a2c8e7;
+    box-shadow: inset 0 0 0 3px #2980b9;
+}
+
+/* Styling for weekdays */
+.react-calendar__month-view__weekdays__weekday {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Weekday hover effect */
+.react-calendar__month-view__weekdays__weekday:hover {
+    color: #3498db;
+    cursor: pointer;
+}
+
+/* Styling for event list */
+.all-events-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.event-list-container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.event-list-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-tooltip-item {
+    padding: 5px 0;
+    font-weight: 500;
+    color: #3498db;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 20px;
+    }
+
+    .calendar-wrapper {
+        max-width: 100%; /* Make calendar take full width on smaller screens */
+    }
+}

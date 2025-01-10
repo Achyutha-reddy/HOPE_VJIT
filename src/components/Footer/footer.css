@@ -1,0 +1,138 @@
+/* Footer Styling */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Fade-in animation for footer */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on footer logo */
+  .footer-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-logo p {
+    font-size: 16px;
+    color: #bdc3c7;
+  }
+  
+  /* Footer Links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 0;
+    display: inline-block;
+  }
+  
+  /* Hover effect on footer links: Change color and add underline */
+  .footer-links a:hover {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  /* Footer Social Icons */
+  .footer-socials {
+    flex: 1;
+    text-align: right;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on social icons: Slight scaling */
+  .footer-socials:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-socials h4 {
+    margin-bottom: 10px;
+  }
+  
+  /* Social Icons - Hover effect */
+  .social-icons a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s ease;
+    font-size: 24px;
+  }
+  
+  /* Hover effect on social icons: Change color and bounce */
+  .social-icons a:hover {
+    color: #3498db;
+    transform: translateY(-5px);
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on footer bottom: Change color */
+  .footer-bottom:hover {
+    color: #3498db;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-socials {
+      text-align: center;
+    }
+  }
+  
