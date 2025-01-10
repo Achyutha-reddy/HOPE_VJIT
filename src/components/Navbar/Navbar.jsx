@@ -60,7 +60,10 @@ const Navbar = () => {
               </ul>
             )}
           </li> */}
-          <li className="navbar-item" onClick={toggleDropdown}>
+          <li className="navbar-item">
+            <Link to="/gallery" className="navbar-links">Gallery</Link>
+          </li>
+          {/* <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Gallery</span>
             {isDropdownOpen && (
               <ul className="dropdown">
@@ -70,7 +73,7 @@ const Navbar = () => {
                 <li><Link to="/gallery/rythubandhusamithi" className="dropdown-item">Rythu Bandhu Samithi</Link></li>
               </ul>
             )}
-          </li>
+          </li> */}
           
           {/* Dropdown Menu Item */}
           <li className="navbar-item" onClick={toggleDropdown}>
@@ -85,7 +88,7 @@ const Navbar = () => {
           <li className="navbar-item">
             <Link to="/vissionmission" className="navbar-links">Vission & Mission</Link>
           </li>
-          <li className="navbar-item" onClick={toggleDropdown}>
+          {/* <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Projects</span>
             {isDropdownOpen && (
               <ul className="dropdown">
@@ -95,6 +98,9 @@ const Navbar = () => {
                 <li><Link to="/projects/rythubandhusamithi" className="dropdown-item">Rythu Bandhu Samithi</Link></li>
               </ul>
             )}
+          </li> */}
+          <li className="navbar-item">
+            <Link to="/projects" className="navbar-links">Projects</Link>
           </li>
         </ul>
 

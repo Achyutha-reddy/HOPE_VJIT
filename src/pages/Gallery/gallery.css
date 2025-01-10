@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+  }
+  
+  .gallery-section {
+    /* padding: 50px 20px; */
+    width: auto;
+    /* height: auto; */
+  }
+  
+  .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    height: auto
+  }
+  
+  .gallery-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+    opacity: 0;
+    animation: fadeInTitle 2s forwards;
+  }
+  
+  @keyframes fadeInTitle {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .gallery-category {
+    margin-bottom: 60px;
+  }
+  
+  .category-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .connect2earth{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  /* Individual Gallery Item */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effects for Gallery Items */
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover:after {
+    opacity: 1;
+  }
+  
+  /* Fade-In Effect for Each Gallery Category */
+  .gallery-category {
+    opacity: 0;
+    animation: fadeInCategory 2s ease-out forwards;
+  }
+  
+  @keyframes fadeInCategory {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .category-title:hover {
+    color: green;
+    /* cursor: pointer; */
+    /* text-decoration: underline; */
+  }
+  
