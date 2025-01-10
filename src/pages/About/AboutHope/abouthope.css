@@ -1,146 +1,211 @@
-/* General styling */
-body {
-    font-family: 'Arial', sans-serif;
+/* Base Styles */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f0f9ff; /* Soft light background to keep a calm, airy vibe */
-  }
-  
-  /* Section Styling */
-  .about-hope {
-    padding: 6rem 2rem;
-    background: linear-gradient(120deg, #E8F0FE, #F3EFFF);
-    animation: fadeIn 1.5s ease-in-out;
-    height: 2400px;
-  }
-  
-  /* Container */
-  .container {
+    background-color: #F8F9FA; /* Light Gray */
+    color: #2C2C54; /* Dark Blue */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Styles */
+.about-hope {
     position: relative;
     top: 0;
     left: 0;
     width: auto;
-    /* height: 1400px; */
+    height: 1400px;
     background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
     padding: 150px 20px;
     z-index: 10;
-  }
-  
-  /* Header Styling */
-  .header {
+}
+
+/* Section Container */
+.about-hope .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
+    padding: 150px 20px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* Header Section */
+.about-hope .header {
     text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .header h2 {
-    font-size: 36px;
-    color: #333; /* Dark text for the header */
-    margin-bottom: 20px;
-    animation: slideUp 1s ease-out;
-  }
-  
-  .header p {
-    font-size: 18px;
-    color: #5d6b79; /* Soft grayish text for readability */
-  }
-  
-  /* Card Styling */
-  .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .card {
-    background: linear-gradient(135deg, #b1e0f7, #d6f2fc); /* Light pastel gradient for cards */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #333; /* Dark text for card content */
-  }
-  
-  .card h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-    transition: color 0.3s ease;
-  }
-  
-  .card p {
-    font-size: 16px;
-    color: #5d6b79;
-    line-height: 1.6;
-  }
-  
-  /* Hover Effects for the Cards */
-  .card:hover {
+    margin-bottom: 3rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.about-hope .header h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #6C63FF; /* Indigo */
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.about-hope .header p {
+    font-size: 1.25rem;
+    color: #2C2C54; /* Dark Blue */
+    line-height: 1.7;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards 0.5s; /* Delay animation for paragraph */
+}
+
+/* Content Section */
+.about-hope .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    animation: fadeInUp 1.5s ease-in-out;
+    width: auto;
+}
+
+/* Card Styles */
+.about-hope .card {
+    background-color: #FFFFFF; /* White */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: zoomIn 1s ease-out;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+/* Hover Effects for Cards */
+.about-hope .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #d6f2fc, #b1e0f7); /* Reverse gradient on hover */
-  }
-  
-  .card:hover h3 {
-    color: #f39c12; /* Soft yellow for the header on hover */
-  }
-  
-  /* Hover Effects for the Header */
-  .header h2:hover {
-    color: #f39c12; /* Soft yellow color on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #EFF2FF; /* Light Indigo Highlight */
+}
+
+/* Card Titles */
+.about-hope .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6C63FF; /* Indigo */
+    margin-bottom: 1rem;
+}
+
+/* Card Paragraph */
+.about-hope .card p {
+    font-size: 1.125rem;
+    color: #2C2C54; /* Dark Blue */
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Button Styles */
+.about-hope .card .btn {
+    background-color: #FFC947; /* Yellow */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    animation: bounce 0.5s infinite alternate;
-  }
-  
-  /* Keyframe Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.about-hope .card .btn:hover {
+    background-color: #FFA726; /* Darker Yellow */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .about-hope {
+        padding: 4rem 1.5rem;
     }
-    to {
-      opacity: 1;
+
+    /* Adjust header size */
+    .about-hope .header h2 {
+        font-size: 2.25rem;
     }
-  }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
+
+    .about-hope .header p {
+        font-size: 1rem;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
+
+    /* Adjust card layout for small screens */
+    .about-hope .content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
-  }
-  
-  @keyframes bounce {
+
+    /* Adjust card size */
+    .about-hope .card {
+        padding: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
     0% {
-      transform: translateY(0);
+        opacity: 0;
     }
     100% {
-      transform: translateY(-10px);
+        opacity: 1;
     }
-  }
-  
-  /* Responsive Design for smaller screens */
-  @media (max-width: 768px) {
-    .content {
-      flex-direction: column;
-      gap: 20px;
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
     }
-  
-    .card {
-      width: 100%;
-      padding: 20px;
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
-  
-    .header h2 {
-      font-size: 30px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
     }
-  
-    .header p {
-      font-size: 16px;
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Add Animation for the Button */
+@keyframes buttonBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about-hope .card .btn {
+    animation: buttonBounce 1s infinite ease-in-out;
+}
