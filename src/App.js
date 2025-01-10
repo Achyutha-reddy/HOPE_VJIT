@@ -32,7 +32,7 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
-        {/* Home Route */}
+        {/* Home Route (default route) */}
         <Route path="/" element={<Home />} />
 
         {/* Teams Routes */}
@@ -69,6 +69,9 @@ function App() {
         <Route path="/projects/shiksha" element={<ProjectShiksha />} />
         <Route path="/projects/connect2earth" element={<ProjectConnect2Earth />} />
         <Route path="/projects/rythubandhusamithi" element={<ProjectRythuBandhuSamithi />} />
+
+        {/* Catch-all Route to Render Home as Default (in case of unrecognized paths) */}
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </Router>
