@@ -1,120 +1,126 @@
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+/* General footer styles */
 .footer {
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
-  color: #fff;
-  padding: 20px 0;
-  height: max-content;
-  margin-top: auto; /* Ensures the footer is at the bottom if content is short */
-  position: relative; /* Required for sticky behavior */
-  z-index: 10;
+  background-color: #333;
+  color: white;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Container */
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
-/* Footer Logo Section */
 .footer-logo h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 24px;
   margin-bottom: 10px;
-  animation: fadeInDown 1.2s ease-in-out;
 }
 
 .footer-logo p {
-  font-size: 1rem;
-  font-style: italic;
-  opacity: 0.9;
+  font-size: 14px;
+  color: #bbb;
 }
 
-/* Footer Socials */
-.footer-socials {
-  text-align: center;
-  margin-top: 10px;
+/* Social media section styles */
+.footer-socio {
+  text-align: left;
 }
 
-.footer-socials h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+.footer-socio h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-.social-icons {
+.socio-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.social-icons a {
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
+.socio-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.social-icons a:hover {
-  color: #ffd700;
-  transform: scale(1.2);
-  animation: pulse 0.6s infinite;
+.socio-icons a:hover {
+  transform: scale(2.0); /* Slightly increase the size on hover */
+  color: #ffcc00; /* Default hover color */
 }
 
-/* Footer Bottom */
+/* Specific hover colors for each icon */
+/* Facebook icon hover effect */
+.socio-icons a:nth-child(1):hover {
+  color: #3b5998; /* Facebook blue */
+}
+
+/* Twitter icon hover effect */
+.socio-icons a:nth-child(2):hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+/* Instagram icon hover effect */
+.socio-icons a:nth-child(3):hover {
+  color: #e1306c; /* Instagram pink */
+}
+
+/* LinkedIn icon hover effect */
+.socio-icons a:nth-child(4):hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+
+/* Footer bottom */
 .footer-bottom {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbb;
 }
 
-/* Animations */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-/* Media Queries */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-logo h2 {
-    font-size: 1.5rem;
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .footer-socials h4 {
-    font-size: 1rem;
+  .footer-socio {
+    text-align: center;
+  }
+
+  .socio-icons a {
+    margin: 10px;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  .footer-logo p {
+    font-size: 12px;
+  }
+
+  .footer-socio h4 {
+    font-size: 16px;
+  }
+
+  .socio-icons a {
+    margin: 5px;
+    font-size: 20px;
   }
 }

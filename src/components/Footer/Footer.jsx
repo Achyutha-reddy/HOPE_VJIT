@@ -32,9 +32,9 @@ const Footer = () => {
           </ul>
         </div> */}
 
-        <div className="footer-socials">
+        <div className="footer-socio">
           <h4>Follow Us</h4>
-          <div className="social-icons">
+          <div className="socio-icons">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} />
             </a>

@@ -59,22 +59,6 @@ main {
 }
 
 /* Sticky Footer */
-footer {
-  position: sticky;
-  bottom: 0;
-  z-index: 1000;
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-  margin: 0;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   header h1 {
