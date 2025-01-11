@@ -89,6 +89,27 @@ const teamMembers = [
     image: nodp,
     description: 'Core Team Member',
   },
+  {
+    id: 1,
+    name: 'SAHITHYA',
+    position: 'WOMENS HOPE PRESIDENT',
+    image: nodp, // You can use real image URLs or local paths
+    description: 'Core Team Member',
+  },
+  {
+    id: 2,
+    name: 'RITHUJA',
+    position: 'WOMENS HOPE VICE PRESIDENT',
+    image: nodp,
+    description: 'Core Team Member',
+  },
+  {
+    id: 3,
+    name: 'MANVITHA',
+    position: 'WOMENS HOPE COORDINATOR',
+    image: nodp,
+    description: 'Core Team Member',
+  },
   // Add more members as needed
 ];
 

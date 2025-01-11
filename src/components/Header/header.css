@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #f0f0f0; /* Gray background */
     padding: 10px 20px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -23,11 +24,12 @@
     height: 50px;
     margin-right: 15px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    padding-bottom: 9px;
   }
   
   .header-logo:hover {
     transform: scale(1.3);
-    filter: brightness(1.2);
+    filter: brightness(1.0);
     
   }
   
@@ -38,6 +40,7 @@
     color: #1d3557; /* Dark Blue color for the title */
     text-transform: uppercase;
     transition: color 0.3s ease;
+    padding-bottom: 10px;
   }
   
   .header-title a {
@@ -51,7 +54,7 @@
   .header-title a:hover {
     color: #1d3557; /* Reddish-Orange color on hover */
     text-shadow: 0 0 2px #00bcd4; /* Reddish-orange text-shadow */
-    font-size: xx-large;
+    /* font-size: xx-large; */
   }
   
   /* Center Section (Secondary Logo) */
@@ -68,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Aligns social icons to the right */
+    padding-bottom: 10px;
   }
   
   .follow-text {
@@ -77,6 +81,7 @@
     margin-right: 10px;
     font-weight: 500;
     animation: fadeIn 1s ease-in-out;
+    padding-bottom: 10px;
   }
   
   .social-icon {
@@ -90,7 +95,7 @@
   
   .social-icon:hover {
     /* transform: rotate(15deg) scale(1.2); */
-    color: #00bcd4; /* Light Blue on hover */
+    color: #1d3557; /* Light Blue on hover */
     transform: scale(1.5);
     filter: brightness(1.2);
   }

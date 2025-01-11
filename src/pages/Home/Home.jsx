@@ -14,7 +14,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>bringing HOPE where it’s needed most</h1>
           <p>Join the HOPE to make world better Everyday.</p>
-          <Link to="/events/upcomming" className="btn-donate">UPCOMING EVENTS</Link>
+          <Link to="/events/upcomming" className="btn-donate">UPCOMING</Link>
         </div>
         {/* Background image for the Hero Section */}
         <img src={hero} alt="Hero Image" className="hero-image" />

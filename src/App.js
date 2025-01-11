@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Hope from "./pages/Teams/Hope/Hope";
-import WomenWings from './pages/Teams/WomenWings/WomenWings'
+// import WomenWings from './pages/Teams/WomenWings/WomenWings'
 import AboutHope from "./pages/About/AboutHope/AboutHope";
 import AboutWomenWings from "./pages/About/AboutWomenWings/AboutWomenWings";
 import Contact from "./pages/Contact/Contact";
@@ -39,12 +39,12 @@ function App() {
         <Route path="/" element={<Home />} />
 
         {/* Teams Routes */}
-        <Route path="/teams/hope" element={<Hope />} />
-        <Route path="/teams/womenwings" element={<WomenWings />} />
+        <Route path="/teams" element={<Hope />} />
+        {/* <Route path="/teams/womenwings" element={<WomenWings />} /> */}
 
         {/* About Routes */}
-        <Route path="/about/hope" element={<AboutHope />} />
-        <Route path="/about/womenwings" element={<AboutWomenWings />} />
+        <Route path="/about" element={<AboutHope />} />
+        {/* <Route path="/about/womenwings" element={<AboutWomenWings />} /> */}
 
         {/* Contact Route */}
         <Route path="/contact" element={<Contact />} />
@@ -65,8 +65,8 @@ function App() {
         <Route path="/gallery/rythubandhusamithi" element={<RythuBandhuSamithi />} /> */}
 
         {/* Events Routes */}
-        <Route path="/events/upcomming" element={<Upcomming />} />
-        <Route path="/events/past" element={<Past />} />
+        <Route path="/events" element={<Upcomming />} />
+        {/* <Route path="/events/past" element={<Past />} /> */}
 
         {/* Vision & Mission Route */}
         {/* <Route path="/vissionmission" element={<VissionMission />} /> */}
