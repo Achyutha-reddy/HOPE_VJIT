@@ -58,6 +58,7 @@ const ProjectCard = ({ title, description, image, detailsLink }) => {
 
 const Projects = () => {
   return (
+    <project>
     <section className="projects-section">
       <div className="container">
         <h2 className="projects-title">Our Projects</h2>
@@ -74,6 +75,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
+    </project>
   );
 };
 

@@ -8,7 +8,7 @@ import heroimage from '../../assets/images/heroimage.jpg'
 
 const Home = () => {
   return (
-    <div>
+    <div className='main1'>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
