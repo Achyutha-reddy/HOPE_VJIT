@@ -39,25 +39,25 @@ const Home = () => {
 
       {/* Featured Projects Section */}
       <section id="projects" className="projects">
-        <h2>Project Shiksha</h2>
+        <h2>OUR PAST PROJECTS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="project-card">
-            <img src="" alt="Education for All" className="project-image" />
-            <h3>Education for All</h3>
-            <p>Our project provides education to children in remote areas, ensuring every child has access to quality learning.</p>
-            <a href="#project-details">Learn More</a>
+            <img src="" alt="project shiksha" className="project-image" />
+            <h3>PROJECT <span>SHIKSHA</span></h3>
+            {/* <p>Lighting up lives and spreading happiness through <span className='project shiksha'>PROJECTSHIKSHA</span></p> */}
+            <Link to="/projects">Learn More</Link>
           </div>
           <div className="project-card">
-            <img src="/path/to/water-image.jpg" alt="Clean Water Initiative" className="project-image" />
-            <h3>Clean Water Initiative</h3>
-            <p>We work on projects to provide safe drinking water to communities facing water scarcity.</p>
-            <a href="#project-details">Learn More</a>
+            <img src="/path/to/water-image.jpg" alt="project laal" className="project-image" />
+            <h3>PROJECT <span className='laal'>LAAL</span></h3>
+            {/* <p>We work on projects to provide safe drinking water to communities facing water scarcity.</p> */}
+            <Link to="/projects">Learn More</Link>
           </div>
           <div className="project-card">
-            <img src="/path/to/health-image.jpg" alt="Health for All" className="project-image" />
-            <h3>Health for All</h3>
-            <p>Our healthcare initiatives aim to improve the health of underserved populations by providing free medical aid.</p>
-            <a href="#project-details">Learn More</a>
+            <img src="/path/to/health-image.jpg" alt="project raksha" className="project-image" />
+            <h3>PROJECT <span>RAKSHA</span></h3>
+            {/* <p>Our healthcare initiatives aim to improve the health of underserved populations by providing free medical aid.</p> */}
+            <Link to="/projects">Learn More</Link>
           </div>
         </div>
       </section>

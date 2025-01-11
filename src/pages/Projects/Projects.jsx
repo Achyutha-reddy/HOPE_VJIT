@@ -1,40 +1,44 @@
 import React from 'react';
 import './projects.css';
+import projectconnect from '../../assets/images/projectearth.jpg';
+import projectsip from '../../assets/images/projectsip.jpg';
+import projectshiksha from '../../assets/images/projectshiksha.jpg';
+import projectraksha from '../../assets/images/projectraksha.jpg';
 
 const projects = [
   {
     id: 1,
-    title: 'Project A',
-    description: 'This is a brief description of Project A. It highlights the key features and objectives.',
-    image: 'https://via.placeholder.com/300',
+    title: 'CONNECT 2 EARTH',
+    description: 'description about project',
+    image: projectconnect,
     detailsLink: '/projects/project-a',
   },
   {
     id: 2,
-    title: 'Project B',
-    description: 'Project B is an advanced application with innovative solutions and features.',
-    image: 'https://via.placeholder.com/300',
+    title: 'SIP AND SHARE',
+    description: 'description about project',
+    image: projectsip,
     detailsLink: '/projects/project-b',
   },
   {
     id: 3,
-    title: 'Project C',
-    description: 'This project focuses on design, scalability, and a smooth user experience.',
+    title: 'PROJECT LAAL',
+    description: 'description about project',
     image: 'https://via.placeholder.com/300',
     detailsLink: '/projects/project-c',
   },
   {
     id: 4,
-    title: 'Project D',
-    description: 'Project D is an example of modern web development practices with cutting-edge technologies.',
-    image: 'https://via.placeholder.com/300',
+    title: 'PROJECT SHIKSHA',
+    description: 'description about project',
+    image: projectshiksha,
     detailsLink: '/projects/project-d',
   },
   {
     id: 5,
     title: 'Project E',
-    description: 'This project demonstrates the integration of AI and machine learning in real-world applications.',
-    image: 'https://via.placeholder.com/300',
+    description: 'PROJECT RAKSHA',
+    image: projectraksha,
     detailsLink: '/projects/project-e',
   },
 ];

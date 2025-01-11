@@ -245,6 +245,38 @@
     opacity: 1;
   }
 }
+.laal {
+  color: red;
+  font-weight: bold;
+  animation: colorChange 2s ease-in-out infinite, bounceEffect 1s ease-in-out infinite;
+}
+
+/* Keyframes for color change animation */
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: darkred;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* Keyframes for bouncing effect */
+@keyframes bounceEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 @keyframes slideInLeft {
   0% {
