@@ -62,7 +62,7 @@
   
   /* Navbar Item Hover Effect */
   .navbar-item {
-    position: relative;
+    position: sticky;
     transition: transform 0.3s ease-in-out;
   }
   
