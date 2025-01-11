@@ -3,11 +3,20 @@
 .logo-container {
     text-align: center;
     margin-bottom: 40px;
+    
   }
   
   .logo {
     max-width: 200px;
     height: auto;
+  }
+  .main{
+    padding: 50px 20px;
+    /* background: linear-gradient(135deg, #a6f1a6, #2c3e50); */
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 100px;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
   }
   
   .google-form-link-container {

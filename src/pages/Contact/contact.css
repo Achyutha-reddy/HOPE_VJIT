@@ -1,8 +1,10 @@
 /* contact.css */
 .main {
-  height: 1400px;
-  width: auto;
-  padding-top: 140px;
+  padding: 50px 20px;
+  /* background: linear-gradient(135deg, #a6f1a6, #2c3e50); */
+  text-align: center;
+  min-height: 100vh;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
 }
 
 .contact-container {
@@ -11,7 +13,7 @@
   margin: 0 auto;
   background-color: #eaf1f9; /* Soft light blue background */
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   animation: fadeIn 1s ease-out;
 }
 

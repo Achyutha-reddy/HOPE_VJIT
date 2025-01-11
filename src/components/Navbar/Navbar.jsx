@@ -85,9 +85,9 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
             <Link to="/vissionmission" className="navbar-links">Vission & Mission</Link>
-          </li>
+          </li> */}
           {/* <li className="navbar-item" onClick={toggleDropdown}>
             <span className="navbar-links">Projects</span>
             {isDropdownOpen && (

@@ -20,7 +20,7 @@ import Contact from "./pages/Contact/Contact";
 // import RythuBandhuSamithi from "./pages/Gallery/RythuBandhuSamithi/RythuBandhuSamithi";
 import Upcomming from "./pages/Events/Upcomming/Upcomming";
 import Past from "./pages/Events/Past/Past";
-import VissionMission from "./pages/Vision&Mission/VisionMission";
+// import VissionMission from "./pages/Vision&Mission/VisionMission";
 // import ProjectLaal from "./pages/Projects/ProjectLaal/ProjectLaal";
 // import ProjectShiksha from "./pages/Projects/ProjectShiksha/ProjectShiksha";
 // import ProjectConnect2Earth from "./pages/Projects/ProjectConnect2Earth/ProjectConnect2Earth";
@@ -69,7 +69,7 @@ function App() {
         <Route path="/events/past" element={<Past />} />
 
         {/* Vision & Mission Route */}
-        <Route path="/vissionmission" element={<VissionMission />} />
+        {/* <Route path="/vissionmission" element={<VissionMission />} /> */}
 
         {/* Projects Routes */}
         <Route path="/projects" element={<Projects />} />
