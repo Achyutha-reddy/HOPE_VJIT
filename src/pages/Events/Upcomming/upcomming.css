@@ -8,6 +8,14 @@
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
+.main{
+  padding-top: 120px;
+  max-width: 1200px;
+  margin:auto;
+  height: 1400px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
 
 /* Event List Styling */
 .event-list-container,
