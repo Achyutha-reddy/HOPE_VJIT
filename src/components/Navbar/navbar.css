@@ -122,29 +122,21 @@
   /* Mobile Menu */
   @media (max-width: 768px) {
     .navbar-menu {
-      display: none;
+      display: none; /* Hidden by default on mobile */
       flex-direction: column;
-      gap: 20px;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #34495e;
       width: 100%;
-      padding: 20px;
-      border-radius: 10px;
+      background-color: #282c34;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
     }
   
     .navbar-menu.active {
-      display: flex;
-      animation: slideIn 0.3s ease-out;
+      display: flex; /* Show menu on toggle */
     }
   
     .navbar-mobile-icon {
-      display: block;
-    }
-  
-    .navbar-mobile-icon.open {
-      transform: rotate(180deg);
+      display: block; /* Show menu icon on mobile */
     }
   }
   
