@@ -83,9 +83,9 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
-    margin-top: 150px;
-    z-index: 999;
+    width: 400px;
+    /* margin-top: 50px; */
+    z-index: 1000;
     align-items: center;
     /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */
     /* padding: 15px 20p; */

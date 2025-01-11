@@ -1,11 +1,12 @@
 /* Overall Container for Team */
 .team-container {
   padding: 50px 20px;
-  /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb); */
   text-align: center;
   min-height: 100vh;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   height: auto;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
 }
 
 /* Title for Team Section */
@@ -26,13 +27,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  height: 1400px;
+  height: auto;
   animation: fadeInUp 2s ease-in-out;
 }
 
 /* Individual Team Member Styling */
 .team-member {
-  background-color: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   border-radius: 10px;
   width: 280px;
   max-width: 90%;
@@ -41,13 +42,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
+  cursor: pointer; /* Add cursor pointer */
 }
 
 /* Hover Effect for Team Member */
 .team-member:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
 /* Team Member Image */
@@ -132,6 +133,7 @@
   .team-member {
     width: 90%;
     margin-bottom: 20px;
+    padding: 20px;
   }
 
   .team-title {
@@ -160,6 +162,7 @@
 
   .team-member {
     padding: 20px;
+    width: 100%;
   }
 
   .team-member-image {

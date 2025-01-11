@@ -64,7 +64,7 @@ html, body {
 
 /* Content Section */
 .about-hope .content {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     animation: fadeInUp 1.5s ease-in-out;
