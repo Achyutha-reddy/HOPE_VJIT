@@ -1,168 +1,178 @@
-/* contact.css */
+/* Contact Section */
 .main {
-  padding: 50px 20px;
-  /* background: linear-gradient(135deg, #a6f1a6, #2c3e50); */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
 }
 
 .logo-container {
-  text-align: center;
-  margin-bottom: 40px;
-  
-}
-
-.logo {
-  max-width: 200px;
-  height: auto;
-}
-.contact-container {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #eaf1f9; /* Soft light blue background */
-  border-radius: 12px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  animation: fadeIn 1s ease-out;
-}
-
-/* Fade in effect */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.contact-container h2 {
-  font-size: 2.8em;
-  font-weight: bold;
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 25px;
-  transition: color 0.3s ease;
-}
-
-.contact-container h2:hover {
-  color: #1f4e79; /* Darker blue color on hover */
-}
-
-.contact-container p {
-  font-size: 1.2em;
-  text-align: center;
-  color: #7f8c8d;
-  margin-bottom: 40px;
-  transition: color 0.3s ease;
-}
-
-.contact-container p:hover {
-  color: #1f4e79; /* Change text color on hover */
-}
-
-.form-group {
   margin-bottom: 20px;
 }
 
-.form-group label {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #34495e;
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
   display: block;
-  margin-bottom: 8px;
-  transition: color 0.3s ease;
 }
 
-.form-group label:hover {
-  color: #1f4e79; /* Label color change on hover */
-}
-
-.form-group input,
-.form-group textarea {
+input,
+textarea,
+select {
   width: 100%;
   padding: 12px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  background-color: #ffffff;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #1f4e79; /* Blue border on focus */
-  box-shadow: 0 0 5px rgba(31, 78, 121, 0.5); /* Light blue glow on focus */
-}
-
-.form-group textarea {
+textarea {
   resize: vertical;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
-.submit-button {
-  background-color: #1f4e79; /* Blue background */
+button.submit-button {
+  background-color: #3498db;
   color: white;
-  font-size: 1.1em;
   padding: 12px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-transform: uppercase;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-  background-color: #0f3b5a; /* Darker blue on hover */
-  transform: translateY(-4px); /* Lift button on hover */
+button.submit-button:hover {
+  background-color: #2980b9;
 }
 
-.submit-button:active {
-  background-color: #0a2c45; /* Even darker blue when clicked */
-  transform: translateY(0); /* Return to normal after click */
+/* Footer and Social Media Icons */
+.footer-socials {
+  margin-top: 30px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-top: 40px;
-  animation: bounceIn 1s ease-out;
-}
-
-/* Bounce effect for social icons */
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+  gap: 15px;
 }
 
 .social-icons a {
-  color: #34495e;
-  font-size: 2.2em;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #1f4e79; /* Change to blue on hover */
-  transform: scale(1.2); /* Grow icon on hover */
+  color: #3498db;
 }
 
-.social-icons a:active {
-  transform: scale(1); /* Return to normal size when clicked */
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  button.submit-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  button.submit-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
