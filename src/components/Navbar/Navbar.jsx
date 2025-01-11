@@ -10,8 +10,16 @@ const Navbar = () => {
   // Toggle mobile menu visibility
   const toggleMenu = () => setIsMobile(!isMobile);
 
+  // Close menu after item click
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(false); // Close the mobile menu
+    }
+  };
+
   // Toggle dropdown visibility
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
 
   return (
     <nav className="navbar">
@@ -104,8 +112,8 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Menu Icon */}
-        <div className="navbar-mobile-icon" onClick={toggleMenu}>
+       {/* Mobile Menu Icon */}
+       <div className="navbar-mobile-icon" onClick={toggleMenu}>
           {isMobile ? <FaTimes /> : <FaBars />}
         </div>
       </div>
