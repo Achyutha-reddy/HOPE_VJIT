@@ -34,7 +34,7 @@ html, body {
     padding-top: 120px;
     max-width: 1200px;
     margin:auto;
-    height: 1400px;
+    /* height: 1400px; */
     background: linear-gradient(135deg, #a8d0e6, #c1e7f1); /* Soft pastel gradient */
 }
 
