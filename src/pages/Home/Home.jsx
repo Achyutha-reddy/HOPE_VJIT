@@ -14,7 +14,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>bringing HOPE where it’s needed most</h1>
           <p>Join the HOPE to make world better Everyday.</p>
-          <Link to="/events/upcomming" className="btn-donate">UPCOMING</Link>
+          <Link to="/events" className="btn-donate">UPCOMING</Link>
         </div>
         {/* Background image for the Hero Section */}
         <img src={hero} alt="Hero Image" className="hero-image" />
@@ -31,7 +31,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <h2>About Us</h2>
           <p>Helping Others and Pervading Empathy <span>SANDEEP</span> and <span>AAKANSHA</span> started HOPE on 20th July 2022 in Vidya Jyothi Institute of Technology, with a vision of serving humankind with a group of like-minded individuals.</p>
-          <Link to="/vissionmission" className="btn-learn-more">Learn More</Link>
+          <Link to="/about" className="btn-learn-more">Learn More</Link>
         </div>
         {/* Add an image related to your mission */}
         <img src={about} alt="About Us" className="about-image" />
