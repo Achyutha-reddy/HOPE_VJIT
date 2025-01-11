@@ -1,138 +1,119 @@
-/* Footer Styling */
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 40px 20px;
-    font-size: 14px;
-    text-align: center;
-    position: relative;
-    animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(135deg, #4a90e2, #9013fe);
+  color: #fff;
+  padding: 20px 0;
+  margin-top: auto; /* Ensures the footer is at the bottom if content is short */
+  position: relative; /* Required for sticky behavior */
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer Logo Section */
+.footer-logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Footer Socials */
+.footer-socials {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-socials h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+  animation: pulse 0.6s infinite;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* Fade-in animation for footer */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer-logo {
-    flex: 1;
-    text-align: left;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Hover effect on footer logo */
-  .footer-logo:hover {
-    transform: scale(1.1);
-  }
-  
+
   .footer-logo h2 {
-    margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
-  
-  .footer-logo p {
-    font-size: 16px;
-    color: #bdc3c7;
-  }
-  
-  /* Footer Links */
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin: 10px 0;
-  }
-  
-  .footer-links a {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding: 5px 0;
-    display: inline-block;
-  }
-  
-  /* Hover effect on footer links: Change color and add underline */
-  .footer-links a:hover {
-    color: #3498db;
-    border-bottom: 2px solid #3498db;
-  }
-  
-  /* Footer Social Icons */
-  .footer-socials {
-    flex: 1;
-    text-align: right;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Hover effect on social icons: Slight scaling */
-  .footer-socials:hover {
-    transform: scale(1.1);
-  }
-  
+
   .footer-socials h4 {
-    margin-bottom: 10px;
+    font-size: 1rem;
   }
-  
-  /* Social Icons - Hover effect */
-  .social-icons a {
-    color: #ecf0f1;
-    margin: 0 10px;
-    transition: color 0.3s, transform 0.3s ease;
-    font-size: 24px;
-  }
-  
-  /* Hover effect on social icons: Change color and bounce */
-  .social-icons a:hover {
-    color: #3498db;
-    transform: translateY(-5px);
-  }
-  
-  /* Footer Bottom */
-  .footer-bottom {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #bdc3c7;
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect on footer bottom: Change color */
-  .footer-bottom:hover {
-    color: #3498db;
-  }
-  
-  /* Mobile View */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    .footer-links {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    .footer-socials {
-      text-align: center;
-    }
-  }
-  
+}
