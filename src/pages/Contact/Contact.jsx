@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social media icons
 import "./contact.css";
+import logo from "../../assets/images/HopeLogo.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,6 +27,9 @@ const Contact = () => {
   return (
     <div className="main">
     <div className="contact-container">
+    <div className="logo-container">
+        <img src={logo} alt="HOPE Logo" className="logo" />
+      </div>
       <h2>Contact HOPE</h2>
       <p>Have questions or suggestions?</p>
       <form onSubmit={handleSubmit}>
