@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/HOPE_VJIT/static/css/main.09f7a5c4.css",
-    "main.js": "/HOPE_VJIT/static/js/main.ac0accad.js",
+    "main.css": "/HOPE_VJIT/static/css/main.2132e370.css",
+    "main.js": "/HOPE_VJIT/static/js/main.e8ecbc05.js",
     "static/media/rythubandhusamithi9.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi9.39784c0aeb449445be99.jpg",
+    "static/media/projectearth.jpg": "/HOPE_VJIT/static/media/projectearth.2f5826b378490482b3f3.jpg",
     "static/media/hopegroup.jpg": "/HOPE_VJIT/static/media/hopegroup.d9c2f20b24e8e872e3d0.jpg",
     "static/media/rythubandhusamithi5.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi5.d9c2f20b24e8e872e3d0.jpg",
+    "static/media/projectshiksha.jpg": "/HOPE_VJIT/static/media/projectshiksha.067e5d12b7a84be7e133.jpg",
     "static/media/rythubandhusamithi2.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi2.217433871ea6578974d2.jpg",
     "static/media/rythubandhusamithi8.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi8.8ec4c4a3d3ea2ad7cad3.jpg",
     "static/media/heroimage.jpg": "/HOPE_VJIT/static/media/heroimage.21173cf1fe5d4fb0a69f.jpg",
     "static/media/rythubandhusamithi6.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi6.ba73fdb7765cdcd99d95.jpg",
     "static/media/rythubandhusamithi4.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi4.72b7081752216e6813e3.jpg",
+    "static/media/projectraksha.jpg": "/HOPE_VJIT/static/media/projectraksha.dd3796bd9a331e31967c.jpg",
     "static/media/rythubandhusamithi7.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi7.7da1b726735e04ec0d46.jpg",
     "static/media/rythubandhusamithi1.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi1.20e1431d8dc6772e365e.jpg",
     "static/media/rythubandhusamithi10.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi10.7a5656d251c88a9214c2.jpg",
     "static/media/virat.jpg": "/HOPE_VJIT/static/media/virat.d3ccd6763831b1ada332.jpg",
+    "static/media/projectsip.jpg": "/HOPE_VJIT/static/media/projectsip.8ea678c1ff69615090f9.jpg",
     "static/media/rythubandhusamithi3.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi3.0ca0f0139fe2b919cbe8.jpg",
     "static/media/HopeLogo.png": "/HOPE_VJIT/static/media/HopeLogo.b6e04b5a0d95f73d0b1c.png",
     "index.html": "/HOPE_VJIT/index.html",
-    "main.09f7a5c4.css.map": "/HOPE_VJIT/static/css/main.09f7a5c4.css.map",
-    "main.ac0accad.js.map": "/HOPE_VJIT/static/js/main.ac0accad.js.map"
+    "main.2132e370.css.map": "/HOPE_VJIT/static/css/main.2132e370.css.map",
+    "main.e8ecbc05.js.map": "/HOPE_VJIT/static/js/main.e8ecbc05.js.map"
   },
   "entrypoints": [
-    "static/css/main.09f7a5c4.css",
-    "static/js/main.ac0accad.js"
+    "static/css/main.2132e370.css",
+    "static/js/main.e8ecbc05.js"
   ]
 }
