@@ -86,10 +86,69 @@ html, body {
 
 /* Hover Effects for Cards */
 .about-hope .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #EFF2FF; /* Light Indigo Highlight */
+    transform: translateY(-15px); /* Lift the card higher */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background-color: #E0F7FA; /* Light cyan highlight */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
+/* Add subtle scaling effect on hover for the card */
+.about-hope .card:hover h3 {
+    color: #00796B; /* Teal */
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-hope .card:hover p {
+    color: #004D40; /* Dark teal */
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.about-hope .card .btn:hover {
+    background-color: #0288D1; /* Bright Blue */
+    transform: scale(1.1); /* Slight scaling effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Animation */
+.about-hope .card .btn {
+    animation: buttonBounce 1.5s infinite ease-in-out; /* Gentle bounce effect */
+}
+
+/* Card Animation */
+.about-hope .card {
+    animation: fadeInUp 2s ease-in-out forwards, cardGlow 3s infinite alternate;
+}
+
+/* Add a glowing animation effect for cards */
+@keyframes cardGlow {
+    0% {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+}
+
+/* Button Bounce Animation */
+@keyframes buttonBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Subtle card hover outline effect */
+.about-hope .card:hover {
+    outline: 2px solid rgba(0, 150, 136, 0.5); /* Teal glow */
+    outline-offset: 5px;
+}
+
 
 /* Card Titles */
 .about-hope .card h3 {
@@ -128,13 +187,12 @@ html, body {
 }
 
 /* Responsive Design for smaller screens */
+/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
-    /* Adjust padding for smaller screens */
     .about-hope {
         padding: 4rem 1.5rem;
     }
 
-    /* Adjust header size */
     .about-hope .header h2 {
         font-size: 2.25rem;
     }
@@ -143,24 +201,25 @@ html, body {
         font-size: 1rem;
     }
 
-    /* Adjust card layout for small screens */
+    /* Ensure cards stack one by one */
     .about-hope .content {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        display: flex;               /* Use flexbox */
+        flex-direction: column;      /* Stack items vertically */
+        gap: 1.5rem;                 /* Add space between stacked cards */
+        align-items: center;         /* Center cards horizontally */
     }
 
-    /* Adjust card size */
     .about-hope .card {
-        padding: 1.5rem;
+        width: 100%;                 /* Full width for each card */
+        max-width: 500px;            /* Optional: Limit the card width */
+        padding: 1.5rem;             /* Adjust padding for smaller screens */
     }
 
-    /* Button Adjustments */
     .about-hope .card .btn {
         padding: 0.75rem 1.25rem;
         font-size: 0.9rem;
     }
 
-    /* Adjust text size in cards for smaller screens */
     .about-hope .card h3 {
         font-size: 1.25rem;
     }

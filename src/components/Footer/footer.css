@@ -80,6 +80,9 @@
   font-size: 12px;
   color: #bbb;
 }
+.title-logo{
+  color: whitesmoke;
+}
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {

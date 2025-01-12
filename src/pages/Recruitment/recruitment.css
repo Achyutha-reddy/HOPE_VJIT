@@ -1,57 +1,182 @@
-/* Additional CSS for new sections */
+/* Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #2C2C54; /* Dark Blue */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
+/* Main container styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Logo styling */
 .logo-container {
-    text-align: center;
-    margin-bottom: 40px;
-    
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  animation: logoPulse 3s infinite alternate;
+  background: none;
+}
+
+/* Google Form Section */
+.google-form-link-container {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.google-form-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6C63FF;
+}
+
+.google-form-description {
+  font-size: 1.2rem;
+  color: #2C2C54;
+}
+
+.google-form-description span {
+  color: #FF6F61;
+  font-weight: bold;
+}
+
+.google-form-link {
+  display: inline-block;
+  background-color: #6C63FF;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.google-form-link:hover {
+  transform: scale(1.1);
+  background-color: #5A52DC;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.google-form-link:active {
+  transform: scale(0.98);
+  background-color: #4a47b1;
+}
+
+/* Footer Socials */
+.footer-socials {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #6C63FF;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 25px; /* Adjusted size for more prominent icons */
+}
+
+.social-icons a:hover {
+  color: #FF6F61;
+  transform: rotate(360deg) scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.6);
+}
+
+/* Animations */
+@keyframes logoPulse {
+  from {
+      transform: scale(1);
   }
-  
-  .logo {
-    max-width: 200px;
-    height: auto;
+  to {
+      transform: scale(1.1);
+      /* box-shadow: 0 0 15px rgba(108, 99, 255, 0.5); */
   }
-  .main{
-    padding: 50px 20px;
-    /* background: linear-gradient(135deg, #a6f1a6, #2c3e50); */
-    text-align: center;
-    min-height: 100vh;
-    margin-top: 100px;
-    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
   }
-  
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .google-form-link-container {
-    margin: 40px auto;
-    text-align: center;
-    max-width: 900px;
+      padding: 15px;
+      margin-bottom: 25px;
   }
-  
+
   .google-form-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 15px;
+      font-size: 1.5rem;
   }
-  
+
   .google-form-description {
-    font-size: 1.2em;
-    color: gray;
-    font-size: medium;
-    font-weight: bold;
-    margin-bottom: 20px;
+      font-size: 1rem;
   }
-  
+
   .google-form-link {
-    font-size: 1.2em;
-    color: #1f4e79;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+      font-size: 1rem;
+      padding: 10px 18px;
   }
-  
-  .google-form-link:hover {
-    color: #0f3b5a; /* Darker blue on hover */
+
+  .social-icons a {
+      font-size: 22px;
   }
-  span{
-    font-size: xx-large;
-    color: linear-gradient(135deg, #a6f1a6, #2c3e50);;
+
+  /* Adjusting logo size on smaller screens */
+  .logo {
+      width: 120px;
   }
+}
+
+/* Additional Styling for Buttons */
+button {
+  background-color: #6C63FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #5A52DC;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: #4a47b1;
+}
