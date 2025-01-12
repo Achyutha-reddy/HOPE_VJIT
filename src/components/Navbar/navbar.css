@@ -68,16 +68,6 @@
   cursor: pointer;
 }
 
-/* Desktop View */
-@media (max-width: 1024px) {
-  .navbar-container {
-    padding: 0 10px;
-  }
-  .navbar-menu {
-    gap: 20px; /* Reduced gap between items */
-  }
-}
-
 /* Mobile View */
 @media (max-width: 768px) {
   /* Mobile Menu Icon */
@@ -95,13 +85,15 @@
     height: 100vh;
     width: 250px;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     padding-top: 50px;
     z-index: 999;
+    will-change: transform, opacity;
   }
 
   .navbar-menu.active {
     transform: translateX(0);
+    opacity: 1;
   }
 
   .navbar-item {
