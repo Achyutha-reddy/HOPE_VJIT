@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HOPE_VJIT/static/css/main.1fb7064e.css",
-    "main.js": "/HOPE_VJIT/static/js/main.671f877f.js",
+    "main.css": "/HOPE_VJIT/static/css/main.6d912b5a.css",
+    "main.js": "/HOPE_VJIT/static/js/main.c297fdf8.js",
     "static/media/rythubandhusamithi9.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi9.39784c0aeb449445be99.jpg",
     "static/media/projectearth.jpg": "/HOPE_VJIT/static/media/projectearth.2f5826b378490482b3f3.jpg",
     "static/media/hopegroup.jpg": "/HOPE_VJIT/static/media/hopegroup.d9c2f20b24e8e872e3d0.jpg",
@@ -21,11 +21,11 @@
     "static/media/rythubandhusamithi3.jpg": "/HOPE_VJIT/static/media/rythubandhusamithi3.0ca0f0139fe2b919cbe8.jpg",
     "static/media/HopeLogo.png": "/HOPE_VJIT/static/media/HopeLogo.b6e04b5a0d95f73d0b1c.png",
     "index.html": "/HOPE_VJIT/index.html",
-    "main.1fb7064e.css.map": "/HOPE_VJIT/static/css/main.1fb7064e.css.map",
-    "main.671f877f.js.map": "/HOPE_VJIT/static/js/main.671f877f.js.map"
+    "main.6d912b5a.css.map": "/HOPE_VJIT/static/css/main.6d912b5a.css.map",
+    "main.c297fdf8.js.map": "/HOPE_VJIT/static/js/main.c297fdf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fb7064e.css",
-    "static/js/main.671f877f.js"
+    "static/css/main.6d912b5a.css",
+    "static/js/main.c297fdf8.js"
   ]
 }
