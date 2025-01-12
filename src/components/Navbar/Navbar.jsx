@@ -7,12 +7,12 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   // Toggle mobile menu visibility
-  const toggleMenu = () => setIsMobile(!isMobile);
+  const toggleMenu = () => setIsMobile(prevState => !prevState);
 
-  // Close menu after item click on mobile
+  // Close mobile menu after clicking a menu item
   const handleLinkClick = () => {
     if (window.innerWidth <= 768) {
-      setIsMobile(false); // Close the mobile menu
+      setIsMobile(false); // Close the mobile menu immediately after clicking
     }
   };
 
