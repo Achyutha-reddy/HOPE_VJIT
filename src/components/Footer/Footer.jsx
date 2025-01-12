@@ -35,18 +35,18 @@ const Footer = () => {
         <div className="footer-socio">
           <h4>Follow Us</h4>
           <div className="socio-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.facebook.com/hopevjit/" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            </a> */}
+            <a href="https://twitter.com/hopevjit/" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={24} />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/hopevjit/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24} />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.instagram.com/hopevjit/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

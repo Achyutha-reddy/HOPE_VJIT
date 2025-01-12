@@ -34,9 +34,9 @@ const Header = () => {
         <a href="https://www.instagram.com/hopevjit/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <RiInstagramFill />
         </a>
-        <a href="https://facebook.com/hopevjit" target="_blank" rel="noopener noreferrer" className="social-icon">
+        {/* <a href="https://facebook.com/hopevjit" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaFacebook />
-        </a>
+        </a> */}
       </div>
     </header>
   );

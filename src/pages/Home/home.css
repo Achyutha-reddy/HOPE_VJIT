@@ -531,3 +531,77 @@ span{
   }
 }
 
+.video-gallery {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.video-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible column layout */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.video-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.gallery-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.video-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .video-gallery h2 {
+    font-size: 1.5rem; /* Reduce font size for smaller devices */
+  }
+
+  .video-card {
+    gap: 5px; /* Reduce spacing for smaller screens */
+  }
+
+  .gallery-video {
+    max-width: 100%; /* Ensure videos take full width on smaller devices */
+  }
+
+  .video-card p {
+    font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+  }
+}
+
+/* Responsive adjustments for very small screens (mobile) */
+@media (max-width: 480px) {
+  .video-gallery {
+    padding: 20px 10px; /* Reduce padding for very small screens */
+  }
+
+  .gallery-video {
+    border-radius: 6px; /* Slightly smaller corners */
+  }
+
+  .video-card p {
+    font-size: 0.8rem; /* Make text more compact */
+  }
+}
