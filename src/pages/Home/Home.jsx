@@ -5,7 +5,7 @@ import hero from '../../assets/images/HopeLogo.png'; // Import the hero image
 import heroimage from '../../assets/images/heroimage.jpg';
 import projectshiksha from '../../assets/images/projectshiksha.jpg';
 import projectraksha from '../../assets/images/projectraksha.jpg';
-import connect2earth from '../../assets/images/rythubandhusamithi9.jpg';
+import connect2earth from '../../assets/images/connect2earth-title.jpg';
 import video from '../../assets/videos/herovideo.mp4';
 // import video2 from '../../assets/videos/video2.mp4';
 // import video3 from '../../assets/videos/video3.mp4';
@@ -94,7 +94,7 @@ const Home = () => {
           </div>
           <div className="project-card">
             <img src={connect2earth} alt="project earth" className="project-image" />
-            <h3>PROJECT <span className='laal'>CONNECT 2 EARTH</span></h3>
+            <h3>PROJECT <span>CONNECT 2 EARTH</span></h3>
             <Link to="/projects">Learn More</Link>
           </div>
           <div className="project-card">
