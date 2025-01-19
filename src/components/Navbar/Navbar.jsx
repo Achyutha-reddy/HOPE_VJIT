@@ -5,6 +5,7 @@ import './navbar.css'; // Import your CSS styles
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0); // Track the last scroll position
 
   // Toggle mobile menu visibility
   const toggleMenu = () => setIsMobile(prevState => !prevState);
@@ -16,13 +17,24 @@ const Navbar = () => {
     }
   };
 
-  // Detect scroll to change navbar color
+  // Detect scroll to hide/show navbar
   const handleScroll = () => {
     if (window.scrollY > 50) {
       document.querySelector('.navbar').classList.add('scrolled');
     } else {
       document.querySelector('.navbar').classList.remove('scrolled');
     }
+
+    // Detect scroll direction to hide or show navbar
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down
+      document.querySelector('.navbar').classList.add('hidden');
+    } else {
+      // Scrolling up
+      document.querySelector('.navbar').classList.remove('hidden');
+    }
+
+    setLastScrollY(window.scrollY); // Update the last scroll position
   };
 
   useEffect(() => {
@@ -30,7 +42,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [lastScrollY]); // Ensure handleScroll gets the latest scroll position
 
   return (
     <nav className="navbar">

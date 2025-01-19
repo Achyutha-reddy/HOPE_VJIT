@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hope from "./pages/Teams/Hope/Hope";
 // import WomenWings from './pages/Teams/WomenWings/WomenWings'
 import AboutHope from "./pages/About/AboutHope/AboutHope";
-import AboutWomenWings from "./pages/About/AboutWomenWings/AboutWomenWings";
+// import AboutWomenWings from "./pages/About/AboutWomenWings/AboutWomenWings";
 import Contact from "./pages/Contact/Contact";
 // import Books from "./pages/Donate/Books/Books";
 // import Clothes from "./pages/Donate/Clothes/Clothes";

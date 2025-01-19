@@ -1,46 +1,56 @@
 /* Contact Section */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Official, modern font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: flex-start;  */
   min-height: 100vh;
   background-color: #f9f9f9;
+  padding: 0; /* Remove all padding */
+  margin: 0; /* Remove all margin */
 }
 
 .contact-container {
   background-color: white;
-  padding: 30px;
+  padding: 20px; /* You can adjust padding if needed */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: 600px;
   width: 100%;
   text-align: center;
+  margin: 0; /* Remove any margin */
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin */
 }
 
 .logo {
   width: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin */
 }
 
 h2 {
   font-size: 24px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduced margin */
 }
 
 p {
   color: #777;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduced margin */
 }
 
 /* Form Styling */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin */
   text-align: left;
 }
 
@@ -90,7 +100,7 @@ button.submit-button:hover {
 
 /* Footer and Social Media Icons */
 .footer-socials {
-  margin-top: 30px;
+  margin-top: 20px; /* Reduced margin */
 }
 
 .social-icons {
@@ -100,18 +110,20 @@ button.submit-button:hover {
 }
 
 .social-icons a {
-  color: #555;
+  color: #003366; /* Dark Blue color */
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #3498db;
+  color: #3498db; /* Hover color change */
 }
 
 /* Media Queries */
+
+/* For Tablets and Smaller Screens (Max width 768px) */
 @media (max-width: 768px) {
   .contact-container {
-    padding: 20px;
+    padding: 15px; /* Further reduced padding */
   }
 
   .logo {
@@ -141,11 +153,18 @@ button.submit-button:hover {
     padding: 10px 15px;
     font-size: 14px;
   }
+
+  /* Social Icons Adjustment */
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
+/* For Small Mobile Devices (Max width 480px) */
 @media (max-width: 480px) {
   .contact-container {
-    padding: 15px;
+    padding: 10px; /* Further reduced padding */
   }
 
   .logo {
@@ -174,5 +193,54 @@ button.submit-button:hover {
   button.submit-button {
     padding: 8px 12px;
     font-size: 13px;
+  }
+
+  /* Social Icons Adjustment to be side by side */
+  .social-icons {
+    display: flex; /* Ensure they are displayed side by side */
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* For Extra Small Mobile Devices (Max width 375px) */
+@media (max-width: 375px) {
+  .contact-container {
+    padding: 8px; /* Further reduced padding */
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .form-group label {
+    font-size: 11px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 7px;
+    font-size: 11px;
+  }
+
+  button.submit-button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  /* Ensure Social Icons are side by side */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 }
